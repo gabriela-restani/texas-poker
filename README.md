@@ -1,0 +1,36 @@
+## Configurando o projeto em dev
+### Clone o backend e o frontend dentro de texas-poker
+Dentro do repositório `texas-poker`, clone o backend:
+
+- SSH
+```bash
+git clone git@github.com:gabriela-restani/texas-poker-backend.git
+```
+
+- HTTPS:
+```bash
+git clone https://github.com/gabriela-restani/texas-poker-backend.git
+```
+
+E esse repositório do frontend:
+
+- SSH:
+```bash
+git clone git@github.com:gabriela-restani/texas-poker-client.git
+```
+
+-HTTPS:
+```bash
+git clone https://github.com/gabriela-restani/texas-poker-client.git
+```
+
+### Subindo a aplicação
+Dentro do repositório `texas-poker`, execute:
+
+```bash
+docker compose up texas-poker-client
+```
+
+Esse comando vai subir o frontend, backend, banco de dados postgres e o redis.
+
+Após subir o projeto, basta acessar `http://localhost:3050` ou a porta configurada nas envs.
